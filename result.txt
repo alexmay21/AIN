@@ -1,0 +1,538 @@
+/Users/leimei/anaconda3/envs/tensorflow/bin/python3 /Users/leimei/Documents/AIN/main.py
+/Users/leimei/anaconda3/envs/tensorflow/lib/python3.5/importlib/_bootstrap.py:222: RuntimeWarning: compiletime version 3.6 of module 'tensorflow.python.framework.fast_tensor_util' does not match runtime version 3.5
+  return f(*args, **kwds)
+==============================
+Load dataset done [0.1 s]. #user=212, #item=20, #ratings=6104
+Split dataset done. #traning=4853, #validation=650, #testing=601
+
+Dataset statistic:
+num_users: 212
+num_items: 20
+num_ratings: 6104
+num_context_dims: 2
+num_context: 5
+dims: [212, 20, 2, 3]
+2020-01-29 14:03:56.779223: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+
+Model parameters:
+dataset=Food
+epoch=100
+batch_size=256
+hidden_factor=64, context_hidden_factor=64, effect_hidden_factor=64
+learning_rate=0.0010
+interaction-centric module layers=2, interaction-centric module hidden size=128
+user/item-centric module layers=1, user/item-centric module hidden size=128
+==============================
+Init: 	 validation_rmse=1.1950, validation_mae=0.9715 [0.1 s]
+Init: 	 test_rmse=1.2136, test_mae=0.9972 [0.1 s]
+epoch:  100
+training data size:  4853
+batch_size:  256
+batch num： 18
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 1: 186.856345728824
+Epoch 1 [0.5 s]	validation_rmse=1.1647, validation_mae=0.9487 [0.0 s]
+Epoch 1 [0.5 s]	test_rmse=1.1831, test_mae=0.9751 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 2: 176.28045011821547
+Epoch 2 [0.2 s]	validation_rmse=1.1328, validation_mae=0.9123 [0.0 s]
+Epoch 2 [0.2 s]	test_rmse=1.1453, test_mae=0.9352 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 3: 169.18795615748354
+Epoch 3 [0.2 s]	validation_rmse=1.1231, validation_mae=0.9064 [0.0 s]
+Epoch 3 [0.2 s]	test_rmse=1.1378, test_mae=0.9276 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 4: 165.128368176912
+Epoch 4 [0.2 s]	validation_rmse=1.1137, validation_mae=0.9015 [0.0 s]
+Epoch 4 [0.2 s]	test_rmse=1.1299, test_mae=0.9213 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 5: 161.3879707737973
+Epoch 5 [0.2 s]	validation_rmse=1.1012, validation_mae=0.8893 [0.0 s]
+Epoch 5 [0.2 s]	test_rmse=1.1146, test_mae=0.9060 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 6: 156.53008872584292
+Epoch 6 [0.2 s]	validation_rmse=1.0954, validation_mae=0.8921 [0.0 s]
+Epoch 6 [0.2 s]	test_rmse=1.1119, test_mae=0.9075 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 7: 154.1537278827868
+Epoch 7 [0.2 s]	validation_rmse=1.0865, validation_mae=0.8862 [0.0 s]
+Epoch 7 [0.2 s]	test_rmse=1.1131, test_mae=0.9061 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 8: 152.73485444721422
+Epoch 8 [0.2 s]	validation_rmse=1.0799, validation_mae=0.8826 [0.0 s]
+Epoch 8 [0.2 s]	test_rmse=1.1083, test_mae=0.9038 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 9: 148.30882704885383
+Epoch 9 [0.2 s]	validation_rmse=1.0716, validation_mae=0.8724 [0.0 s]
+Epoch 9 [0.2 s]	test_rmse=1.0987, test_mae=0.8937 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 10: 147.1141497963353
+Epoch 10 [0.2 s]	validation_rmse=1.0736, validation_mae=0.8737 [0.0 s]
+Epoch 10 [0.2 s]	test_rmse=1.1008, test_mae=0.8963 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 11: 144.3623729505037
+Epoch 11 [0.2 s]	validation_rmse=1.0696, validation_mae=0.8677 [0.0 s]
+Epoch 11 [0.2 s]	test_rmse=1.0975, test_mae=0.8915 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 12: 143.18820632131477
+Epoch 12 [0.2 s]	validation_rmse=1.0650, validation_mae=0.8661 [0.0 s]
+Epoch 12 [0.2 s]	test_rmse=1.0957, test_mae=0.8919 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 13: 142.10739135742188
+Epoch 13 [0.2 s]	validation_rmse=1.0640, validation_mae=0.8621 [0.0 s]
+Epoch 13 [0.2 s]	test_rmse=1.0910, test_mae=0.8855 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 14: 137.64459228515625
+Epoch 14 [0.2 s]	validation_rmse=1.0600, validation_mae=0.8595 [0.0 s]
+Epoch 14 [0.2 s]	test_rmse=1.0851, test_mae=0.8823 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 15: 137.66234628777755
+Epoch 15 [0.2 s]	validation_rmse=1.0555, validation_mae=0.8525 [0.0 s]
+Epoch 15 [0.2 s]	test_rmse=1.0854, test_mae=0.8832 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 16: 136.60707493832237
+Epoch 16 [0.2 s]	validation_rmse=1.0610, validation_mae=0.8614 [0.0 s]
+Epoch 16 [0.2 s]	test_rmse=1.0818, test_mae=0.8837 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 17: 134.91745436818977
+Epoch 17 [0.2 s]	validation_rmse=1.0501, validation_mae=0.8488 [0.0 s]
+Epoch 17 [0.2 s]	test_rmse=1.0769, test_mae=0.8780 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 18: 133.26199300665604
+Epoch 18 [0.2 s]	validation_rmse=1.0523, validation_mae=0.8509 [0.0 s]
+Epoch 18 [0.2 s]	test_rmse=1.0755, test_mae=0.8766 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 19: 131.32522783781351
+Epoch 19 [0.2 s]	validation_rmse=1.0482, validation_mae=0.8458 [0.0 s]
+Epoch 19 [0.2 s]	test_rmse=1.0733, test_mae=0.8757 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 20: 130.2056218197471
+Epoch 20 [0.2 s]	validation_rmse=1.0435, validation_mae=0.8394 [0.0 s]
+Epoch 20 [0.2 s]	test_rmse=1.0657, test_mae=0.8664 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 21: 128.16230211759867
+Epoch 21 [0.2 s]	validation_rmse=1.0445, validation_mae=0.8439 [0.0 s]
+Epoch 21 [0.2 s]	test_rmse=1.0704, test_mae=0.8734 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 22: 127.80850460654811
+Epoch 22 [0.2 s]	validation_rmse=1.0423, validation_mae=0.8405 [0.0 s]
+Epoch 22 [0.2 s]	test_rmse=1.0673, test_mae=0.8701 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 23: 125.50117291902241
+Epoch 23 [0.2 s]	validation_rmse=1.0366, validation_mae=0.8322 [0.0 s]
+Epoch 23 [0.2 s]	test_rmse=1.0608, test_mae=0.8635 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 24: 125.3769736039011
+Epoch 24 [0.2 s]	validation_rmse=1.0320, validation_mae=0.8273 [0.0 s]
+Epoch 24 [0.2 s]	test_rmse=1.0523, test_mae=0.8540 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 25: 123.61859251323499
+Epoch 25 [0.2 s]	validation_rmse=1.0326, validation_mae=0.8311 [0.0 s]
+Epoch 25 [0.2 s]	test_rmse=1.0554, test_mae=0.8607 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 26: 124.01135735762746
+Epoch 26 [0.2 s]	validation_rmse=1.0356, validation_mae=0.8303 [0.0 s]
+Epoch 26 [0.2 s]	test_rmse=1.0545, test_mae=0.8582 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 27: 121.85977654708059
+Epoch 27 [0.2 s]	validation_rmse=1.0238, validation_mae=0.8196 [0.0 s]
+Epoch 27 [0.2 s]	test_rmse=1.0456, test_mae=0.8492 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 28: 118.20454727975945
+Epoch 28 [0.2 s]	validation_rmse=1.0205, validation_mae=0.8180 [0.0 s]
+Epoch 28 [0.2 s]	test_rmse=1.0445, test_mae=0.8469 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 29: 119.80255408036082
+Epoch 29 [0.2 s]	validation_rmse=1.0185, validation_mae=0.8143 [0.0 s]
+Epoch 29 [0.2 s]	test_rmse=1.0372, test_mae=0.8380 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 30: 119.32483311703331
+Epoch 30 [0.2 s]	validation_rmse=1.0186, validation_mae=0.8123 [0.0 s]
+Epoch 30 [0.2 s]	test_rmse=1.0327, test_mae=0.8296 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 31: 117.63123964008533
+Epoch 31 [0.2 s]	validation_rmse=1.0218, validation_mae=0.8137 [0.0 s]
+Epoch 31 [0.2 s]	test_rmse=1.0335, test_mae=0.8286 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 32: 117.72543856972142
+Epoch 32 [0.2 s]	validation_rmse=1.0167, validation_mae=0.8126 [0.0 s]
+Epoch 32 [0.2 s]	test_rmse=1.0353, test_mae=0.8385 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 33: 117.49617887798108
+Epoch 33 [0.2 s]	validation_rmse=1.0145, validation_mae=0.8120 [0.0 s]
+Epoch 33 [0.2 s]	test_rmse=1.0281, test_mae=0.8315 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 34: 115.2335409867136
+Epoch 34 [0.2 s]	validation_rmse=1.0060, validation_mae=0.8017 [0.0 s]
+Epoch 34 [0.2 s]	test_rmse=1.0268, test_mae=0.8272 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 35: 112.84062395597759
+Epoch 35 [0.2 s]	validation_rmse=1.0099, validation_mae=0.7999 [0.0 s]
+Epoch 35 [0.2 s]	test_rmse=1.0329, test_mae=0.8271 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 36: 114.35788766961349
+Epoch 36 [0.2 s]	validation_rmse=1.0081, validation_mae=0.8027 [0.0 s]
+Epoch 36 [0.2 s]	test_rmse=1.0329, test_mae=0.8317 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 37: 113.51140313399465
+Epoch 37 [0.2 s]	validation_rmse=1.0078, validation_mae=0.8046 [0.0 s]
+Epoch 37 [0.2 s]	test_rmse=1.0269, test_mae=0.8241 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 38: 111.51790458277652
+Epoch 38 [0.2 s]	validation_rmse=1.0095, validation_mae=0.8052 [0.0 s]
+Epoch 38 [0.2 s]	test_rmse=1.0235, test_mae=0.8190 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 39: 109.79010812859786
+Epoch 39 [0.2 s]	validation_rmse=1.0071, validation_mae=0.8043 [0.0 s]
+Epoch 39 [0.2 s]	test_rmse=1.0227, test_mae=0.8240 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 40: 109.61267652009663
+Epoch 40 [0.2 s]	validation_rmse=0.9971, validation_mae=0.7944 [0.0 s]
+Epoch 40 [0.2 s]	test_rmse=1.0226, test_mae=0.8191 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 41: 109.1876284950658
+Epoch 41 [0.2 s]	validation_rmse=1.0031, validation_mae=0.8007 [0.0 s]
+Epoch 41 [0.2 s]	test_rmse=1.0223, test_mae=0.8253 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 42: 109.06523212633635
+Epoch 42 [0.2 s]	validation_rmse=0.9994, validation_mae=0.7997 [0.0 s]
+Epoch 42 [0.2 s]	test_rmse=1.0237, test_mae=0.8287 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 43: 106.58244323730469
+Epoch 43 [0.2 s]	validation_rmse=0.9926, validation_mae=0.7925 [0.0 s]
+Epoch 43 [0.2 s]	test_rmse=1.0156, test_mae=0.8156 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 44: 106.28392791748047
+Epoch 44 [0.2 s]	validation_rmse=0.9946, validation_mae=0.7964 [0.0 s]
+Epoch 44 [0.2 s]	test_rmse=1.0222, test_mae=0.8209 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 45: 108.16514868485301
+Epoch 45 [0.2 s]	validation_rmse=0.9955, validation_mae=0.7951 [0.0 s]
+Epoch 45 [0.2 s]	test_rmse=1.0228, test_mae=0.8281 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 46: 106.58996541876542
+Epoch 46 [0.2 s]	validation_rmse=0.9813, validation_mae=0.7829 [0.0 s]
+Epoch 46 [0.2 s]	test_rmse=1.0194, test_mae=0.8222 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 47: 104.60605179636102
+Epoch 47 [0.2 s]	validation_rmse=0.9838, validation_mae=0.7843 [0.0 s]
+Epoch 47 [0.2 s]	test_rmse=1.0179, test_mae=0.8202 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 48: 105.44607423481189
+Epoch 48 [0.2 s]	validation_rmse=0.9826, validation_mae=0.7843 [0.0 s]
+Epoch 48 [0.2 s]	test_rmse=1.0207, test_mae=0.8242 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 49: 106.79907748573704
+Epoch 49 [0.2 s]	validation_rmse=0.9772, validation_mae=0.7762 [0.0 s]
+Epoch 49 [0.2 s]	test_rmse=1.0119, test_mae=0.8139 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 50: 103.69716764751233
+Epoch 50 [0.2 s]	validation_rmse=0.9776, validation_mae=0.7812 [0.0 s]
+Epoch 50 [0.2 s]	test_rmse=1.0154, test_mae=0.8195 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 51: 103.58563192267167
+Epoch 51 [0.2 s]	validation_rmse=0.9751, validation_mae=0.7753 [0.0 s]
+Epoch 51 [0.2 s]	test_rmse=1.0122, test_mae=0.8139 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 52: 102.05528299432052
+Epoch 52 [0.2 s]	validation_rmse=0.9706, validation_mae=0.7715 [0.0 s]
+Epoch 52 [0.2 s]	test_rmse=1.0151, test_mae=0.8146 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 53: 102.17451316431949
+Epoch 53 [0.2 s]	validation_rmse=0.9672, validation_mae=0.7692 [0.0 s]
+Epoch 53 [0.2 s]	test_rmse=1.0081, test_mae=0.8107 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 54: 100.53534738641036
+Epoch 54 [0.2 s]	validation_rmse=0.9726, validation_mae=0.7711 [0.0 s]
+Epoch 54 [0.2 s]	test_rmse=1.0091, test_mae=0.8086 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 55: 103.85273863139905
+Epoch 55 [0.2 s]	validation_rmse=0.9704, validation_mae=0.7730 [0.0 s]
+Epoch 55 [0.2 s]	test_rmse=1.0027, test_mae=0.8039 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 56: 101.85316708213405
+Epoch 56 [0.2 s]	validation_rmse=0.9714, validation_mae=0.7764 [0.0 s]
+Epoch 56 [0.2 s]	test_rmse=1.0105, test_mae=0.8136 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 57: 100.12150493421052
+Epoch 57 [0.2 s]	validation_rmse=0.9697, validation_mae=0.7723 [0.0 s]
+Epoch 57 [0.2 s]	test_rmse=1.0136, test_mae=0.8175 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 58: 99.91504147178249
+Epoch 58 [0.2 s]	validation_rmse=0.9610, validation_mae=0.7659 [0.0 s]
+Epoch 58 [0.2 s]	test_rmse=1.0019, test_mae=0.8026 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 59: 100.18093872070312
+Epoch 59 [0.2 s]	validation_rmse=0.9597, validation_mae=0.7649 [0.0 s]
+Epoch 59 [0.2 s]	test_rmse=1.0006, test_mae=0.7991 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 60: 99.11570659436677
+Epoch 60 [0.2 s]	validation_rmse=0.9683, validation_mae=0.7709 [0.0 s]
+Epoch 60 [0.2 s]	test_rmse=1.0047, test_mae=0.8020 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 61: 96.88663683439556
+Epoch 61 [0.2 s]	validation_rmse=0.9662, validation_mae=0.7697 [0.0 s]
+Epoch 61 [0.2 s]	test_rmse=1.0070, test_mae=0.8065 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 62: 97.13627624511719
+Epoch 62 [0.2 s]	validation_rmse=0.9598, validation_mae=0.7616 [0.0 s]
+Epoch 62 [0.2 s]	test_rmse=1.0039, test_mae=0.8028 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 63: 97.89935021651418
+Epoch 63 [0.2 s]	validation_rmse=0.9614, validation_mae=0.7636 [0.0 s]
+Epoch 63 [0.2 s]	test_rmse=1.0036, test_mae=0.8002 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 64: 97.22270042017887
+Epoch 64 [0.2 s]	validation_rmse=0.9619, validation_mae=0.7614 [0.0 s]
+Epoch 64 [0.2 s]	test_rmse=1.0034, test_mae=0.7981 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 65: 95.44523741069592
+Epoch 65 [0.2 s]	validation_rmse=0.9578, validation_mae=0.7612 [0.0 s]
+Epoch 65 [0.2 s]	test_rmse=1.0059, test_mae=0.8049 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 66: 98.7355852629009
+Epoch 66 [0.2 s]	validation_rmse=0.9591, validation_mae=0.7610 [0.0 s]
+Epoch 66 [0.2 s]	test_rmse=1.0028, test_mae=0.7997 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 67: 94.89558089406867
+Epoch 67 [0.2 s]	validation_rmse=0.9582, validation_mae=0.7607 [0.0 s]
+Epoch 67 [0.2 s]	test_rmse=1.0047, test_mae=0.8027 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 68: 95.41221899735301
+Epoch 68 [0.2 s]	validation_rmse=0.9548, validation_mae=0.7603 [0.0 s]
+Epoch 68 [0.2 s]	test_rmse=1.0001, test_mae=0.8022 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 69: 93.39693531237151
+Epoch 69 [0.2 s]	validation_rmse=0.9547, validation_mae=0.7592 [0.0 s]
+Epoch 69 [0.2 s]	test_rmse=1.0068, test_mae=0.8021 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 70: 94.06300996479236
+Epoch 70 [0.2 s]	validation_rmse=0.9502, validation_mae=0.7521 [0.0 s]
+Epoch 70 [0.2 s]	test_rmse=1.0038, test_mae=0.8011 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 71: 93.89895308645148
+Epoch 71 [0.2 s]	validation_rmse=0.9603, validation_mae=0.7624 [0.0 s]
+Epoch 71 [0.2 s]	test_rmse=1.0042, test_mae=0.7993 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 72: 92.31620909038342
+Epoch 72 [0.2 s]	validation_rmse=0.9540, validation_mae=0.7579 [0.0 s]
+Epoch 72 [0.2 s]	test_rmse=1.0076, test_mae=0.8087 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 73: 94.52761519582648
+Epoch 73 [0.2 s]	validation_rmse=0.9550, validation_mae=0.7586 [0.0 s]
+Epoch 73 [0.2 s]	test_rmse=1.0004, test_mae=0.8032 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 74: 94.1586251509817
+Epoch 74 [0.2 s]	validation_rmse=0.9517, validation_mae=0.7571 [0.0 s]
+Epoch 74 [0.2 s]	test_rmse=1.0031, test_mae=0.8060 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 75: 92.75376892089844
+Epoch 75 [0.2 s]	validation_rmse=0.9503, validation_mae=0.7536 [0.0 s]
+Epoch 75 [0.2 s]	test_rmse=1.0004, test_mae=0.8000 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 76: 92.64050654361122
+Epoch 76 [0.2 s]	validation_rmse=0.9464, validation_mae=0.7502 [0.0 s]
+Epoch 76 [0.2 s]	test_rmse=1.0025, test_mae=0.8024 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 77: 92.17854389391448
+Epoch 77 [0.2 s]	validation_rmse=0.9415, validation_mae=0.7481 [0.0 s]
+Epoch 77 [0.2 s]	test_rmse=0.9974, test_mae=0.7997 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 78: 89.21706510844983
+Epoch 78 [0.2 s]	validation_rmse=0.9443, validation_mae=0.7493 [0.0 s]
+Epoch 78 [0.2 s]	test_rmse=0.9964, test_mae=0.7922 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 79: 90.0773158826326
+Epoch 79 [0.2 s]	validation_rmse=0.9467, validation_mae=0.7541 [0.0 s]
+Epoch 79 [0.2 s]	test_rmse=1.0026, test_mae=0.8031 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 80: 90.76762590910259
+Epoch 80 [0.2 s]	validation_rmse=0.9535, validation_mae=0.7592 [0.0 s]
+Epoch 80 [0.2 s]	test_rmse=1.0094, test_mae=0.8107 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 81: 90.78062639738384
+Epoch 81 [0.2 s]	validation_rmse=0.9428, validation_mae=0.7495 [0.0 s]
+Epoch 81 [0.2 s]	test_rmse=0.9913, test_mae=0.7932 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 82: 90.30705100611637
+Epoch 82 [0.2 s]	validation_rmse=0.9496, validation_mae=0.7479 [0.0 s]
+Epoch 82 [0.2 s]	test_rmse=0.9903, test_mae=0.7867 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 83: 87.96929168701172
+Epoch 83 [0.2 s]	validation_rmse=0.9461, validation_mae=0.7523 [0.0 s]
+Epoch 83 [0.2 s]	test_rmse=0.9919, test_mae=0.7939 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 84: 88.93514894184314
+Epoch 84 [0.2 s]	validation_rmse=0.9433, validation_mae=0.7492 [0.0 s]
+Epoch 84 [0.2 s]	test_rmse=0.9952, test_mae=0.8002 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 85: 89.13551491185238
+Epoch 85 [0.2 s]	validation_rmse=0.9463, validation_mae=0.7506 [0.0 s]
+Epoch 85 [0.2 s]	test_rmse=0.9952, test_mae=0.7944 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 86: 88.61552589818051
+Epoch 86 [0.2 s]	validation_rmse=0.9412, validation_mae=0.7458 [0.0 s]
+Epoch 86 [0.2 s]	test_rmse=0.9892, test_mae=0.7887 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 87: 88.93812922427529
+Epoch 87 [0.2 s]	validation_rmse=0.9420, validation_mae=0.7458 [0.0 s]
+Epoch 87 [0.2 s]	test_rmse=0.9976, test_mae=0.7968 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 88: 87.97708812512849
+Epoch 88 [0.2 s]	validation_rmse=0.9442, validation_mae=0.7508 [0.0 s]
+Epoch 88 [0.2 s]	test_rmse=0.9979, test_mae=0.8013 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 89: 87.51503191496197
+Epoch 89 [0.2 s]	validation_rmse=0.9363, validation_mae=0.7398 [0.0 s]
+Epoch 89 [0.2 s]	test_rmse=0.9909, test_mae=0.7903 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 90: 85.89666507118626
+Epoch 90 [0.2 s]	validation_rmse=0.9401, validation_mae=0.7426 [0.0 s]
+Epoch 90 [0.2 s]	test_rmse=0.9960, test_mae=0.7912 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 91: 86.73643453497635
+Epoch 91 [0.2 s]	validation_rmse=0.9394, validation_mae=0.7492 [0.0 s]
+Epoch 91 [0.2 s]	test_rmse=0.9955, test_mae=0.7942 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 92: 89.2881915443822
+Epoch 92 [0.2 s]	validation_rmse=0.9383, validation_mae=0.7467 [0.0 s]
+Epoch 92 [0.2 s]	test_rmse=0.9973, test_mae=0.7930 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 93: 86.3919573332134
+Epoch 93 [0.2 s]	validation_rmse=0.9352, validation_mae=0.7370 [0.0 s]
+Epoch 93 [0.2 s]	test_rmse=1.0004, test_mae=0.7973 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 94: 87.86197662353516
+Epoch 94 [0.2 s]	validation_rmse=0.9351, validation_mae=0.7397 [0.0 s]
+Epoch 94 [0.2 s]	test_rmse=0.9972, test_mae=0.8025 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 95: 86.6005526090923
+Epoch 95 [0.2 s]	validation_rmse=0.9416, validation_mae=0.7473 [0.0 s]
+Epoch 95 [0.2 s]	test_rmse=0.9968, test_mae=0.7949 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 96: 87.1771424946032
+Epoch 96 [0.2 s]	validation_rmse=0.9412, validation_mae=0.7430 [0.0 s]
+Epoch 96 [0.2 s]	test_rmse=0.9935, test_mae=0.7825 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 97: 85.84550676847759
+Epoch 97 [0.2 s]	validation_rmse=0.9381, validation_mae=0.7458 [0.0 s]
+Epoch 97 [0.2 s]	test_rmse=0.9966, test_mae=0.7938 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 98: 87.21306128250926
+Epoch 98 [0.2 s]	validation_rmse=0.9302, validation_mae=0.7396 [0.0 s]
+Epoch 98 [0.2 s]	test_rmse=0.9982, test_mae=0.7983 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 99: 85.89988467567845
+Epoch 99 [0.2 s]	validation_rmse=0.9346, validation_mae=0.7369 [0.0 s]
+Epoch 99 [0.2 s]	test_rmse=0.9914, test_mae=0.7832 [0.0 s]
+last batch's batch size 245
+-----------------------------------------------------------------
+training loss of epoch 100: 85.56832002338611
+Epoch 100 [0.2 s]	validation_rmse=0.9478, validation_mae=0.7494 [0.0 s]
+Epoch 100 [0.2 s]	test_rmse=1.0071, test_mae=0.8007 [0.0 s]
+
+
+
+
+Best Iter= 98: valid_rmse = 0.9302, valid_mae = 0.7396, test_rmse = 0.9982, test_mae = 0.7983
+
+Process finished with exit code 0
