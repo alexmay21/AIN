@@ -238,7 +238,7 @@ sympy==1.3
 tables==3.4.4
 tblib==1.3.2
 tensorboard==2.0.0
-tensorflow==2.0.0
+tensorflow==2.0.3
 tensorflow-estimator==2.0.0
 termcolor==1.1.0
 terminado==0.8.1
