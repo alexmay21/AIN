@@ -1,5 +1,5 @@
 absl-py==0.8.1
-aiohttp==3.5.4
+aiohttp==3.7.4
 alabaster==0.7.12
 altgraph==0.16.1
 anaconda-client==1.7.2
