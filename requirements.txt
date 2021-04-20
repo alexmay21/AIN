@@ -159,7 +159,7 @@ protobuf==3.11.2
 psutil==5.4.8
 psycopg2==2.8.3
 ptyprocess==0.6.0
-py==1.7.0
+py==1.10.0
 py2app==0.19
 pyasn1==0.4.6
 pyasn1-modules==0.2.6
